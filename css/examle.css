@@ -1,0 +1,21 @@
+
+
+.col-box{
+    position: relative;
+}
+
+
+.col-box::before{
+    content: "";
+    width: 0px;
+    height: 100%;
+    background-color: #3ab590;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: .6s all;
+}
+.col-box:hover::before{
+    width: 100%;
+}
